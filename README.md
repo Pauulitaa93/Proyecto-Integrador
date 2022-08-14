@@ -1,6 +1,5 @@
-# Proyecto-Integrador
-Proyecto Integrador  ISPC (Grupo 5) 
+# Proyecto-Integrador/ Ejercicios de Modulo Final 
+Proyecto Integrador  ISPC (Grupo 5) Aula 29
 
-Agregar un cambio al archivo Readme....
-Nuevo cambios al archivo Readme....
+
 
