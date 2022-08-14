@@ -23,7 +23,7 @@ Sexo varchar(20) NOT NULL,
 DNI_dueno int NOT NULL,
 FOREIGN KEY (DNI_Dueno) REFERENCES Dueno(DNI)
 );
-/*EJERCICIO NUMERO 4 */
+/*EJERCICIO NUMERO 4- */
 update Perro SET fecha_nac = '120421' WHERE nombre = 'picho' ;
 
 insert into Perro values (1,'picho','2012-04-22','macho',33123123);
@@ -50,7 +50,7 @@ insert into Historial values (003,270320,3,'peinado y corte',4500);
 insert into Historial values (004,270722,4,'peinado y corte',4500);
 insert into Historial values (005,270722,5,'Control',900);
 
-/*EJERCICIO NUMERO 3 */
+/*EJERCICIO NUMERO 3- */
 select fecha,perro from Historial order by fecha;
 delete from historial where perro = 1
 
