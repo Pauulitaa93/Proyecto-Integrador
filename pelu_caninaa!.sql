@@ -23,8 +23,7 @@ Sexo varchar(20) NOT NULL,
 DNI_dueno int NOT NULL,
 FOREIGN KEY (DNI_Dueno) REFERENCES Dueno(DNI)
 );
-/*EJERCICIO NUMERO 4- */
-update Perro SET fecha_nac = '120421' WHERE nombre = 'picho' ;
+
 
 insert into Perro values (1,'picho','2012-04-22','macho',33123123);
 insert into Perro values (2,'tofi','2015-04-19','macho',55321321);
@@ -46,11 +45,23 @@ FOREIGN KEY(perro) REFERENCES Perro(ID_Perro)
 );
 insert into Historial values (001,130522,1,'pulgas,pipeta forte',1200);
 insert into Historial values (002,150620,2,'solo control,estado optimo',900);
-insert into Historial values (003,270320,3,'peinado y corte',4500);
-insert into Historial values (004,270722,4,'peinado y corte',4500);
-insert into Historial values (005,270722,5,'Control',900);
+insert into Historial values (003,220420,3,'peinado y corte',4500);
+insert into Historial values (004,220710,4,'peinado y corte',4500);
+insert into Historial values (005,220715,5,'Control',900);
+select * from Historial
 
-/*EJERCICIO NUMERO 3- */
-select fecha,perro from Historial order by fecha;
-delete from historial where perro = 1
+/*EJERCICIO NUMERO 5 *//*EJERCICIO NUMERO 5 *//*EJERCICIO NUMERO 5 */
+
+SELECT p.Nombre 
+FROM Perro p 
+INNER JOIN Dueno d 
+ON d.DNI = p.DNI_dueno 
+WHERE d.Nombre = 'pedro';
+/*EJERCICIO NUMERO 6 *//*EJERCICIO NUMERO 6 *//*EJERCICIO NUMERO 6 */
+
+SELECT SUM(Monto)
+FROM Historial
+WHERE month(Fecha) = 07 and year(Fecha) = 2022;
+
+
 
