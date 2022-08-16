@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS peluqueriacanina;
 CREATE DATABASE peluqueriacanina CHARACTER SET utf8mb4;
 USE peluqueriacanina;
@@ -69,8 +68,8 @@ INSERT INTO historial VALUES (8, '2022/07/01', 107, 'básica', 2650);
 INSERT INTO historial VALUES (9, '2020/08/09', 108, 'alta', 8000);
 INSERT INTO historial VALUES (10, '2021/10/05', 109, 'básica', 3700);
 
-/*11. Obtener todos los dueños que tengan perros de menos de 5 
-años de edad que no hayan visitado la peluquería en el año 2022.*/
+/*11 Obtener dueños que tengan perros de menos de 5 
+años que no hayan visitado la peluquería en el año 2022.*/
 
 SELECT 
     p.nombre AS Perro,
